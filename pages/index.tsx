@@ -1,9 +1,12 @@
 import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
+import AboutUs from './Components/AboutUs'
 import Customer from './Components/Customer'
 import Faq from './Components/Faq'
+import Footer from './Components/Footer'
 import Intro from './Components/Intro'
 import MobNav from './Components/MobNav'
+import OurServices from './Components/OurServices'
 import { QuoteButton } from './Components/QuoteButton'
 import Whyus from './Components/Whyus'
 import Home from './Home'
@@ -32,6 +35,9 @@ const MainDisplay = () => {
            <Whyus/>
            <Customer/>
            <Faq/>
+           <OurServices/>
+           <AboutUs/>
+           <Footer/>
          </Box>
           
      
