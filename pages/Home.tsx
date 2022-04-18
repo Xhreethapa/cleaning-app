@@ -5,7 +5,7 @@ import {BsStarFill , BsStarHalf} from 'react-icons/bs'
 
 const Home = () => {
   return (
-    <Box  pt='10' backgroundColor='#5C4CB1' h='100vh'>
+    <Box  pt='10' backgroundColor='#5C4CB1' h={{ base:'100vh' , sm:'600px', md:'500px'}}>
          <Box   display='flex ' alignItems='center' justifyContent='center' cursor='pointer' textDecoration='none' >
                <h1 style={{fontWeight: 'bold', fontSize:'larger'}}> <span style={{color:"white"}}>Elite</span>Cleaning</h1>
                

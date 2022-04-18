@@ -29,6 +29,8 @@ const Whyus = () => {
             <Text>You can enjoy your precious time doing whatever you want to do while professionals are taking care of cleaning for you.</Text>
         </Flex>
 
+        
+
 
     </Box>
   )

@@ -26,7 +26,7 @@ const MainDisplay = () => {
             </Head>
         
           <Home/>
-         <Box position="fixed" bottom='0' right='0' >
+         <Box position="fixed" bottom='0' right='0' zIndex='300' >
          <QuoteButton />
          </Box>
          <Box backgroundColor='whitesmoke'>

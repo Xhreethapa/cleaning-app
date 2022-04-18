@@ -17,8 +17,10 @@ const AboutUs = () => {
             Our End of lease cleaning service comes with  <span style={{ fontSize:'larger', fontWeight:'bold'}}> 72 hours Bond-Back guarantee</span>.
         </Text>
     </Box>
-    <Box py='10' px='10' backgroundImage='./sydney.jpg' backgroundPosition='center' backgroundSize='cover'opacity='0.8'>
-        <Flex flexDirection='column' justifyContent='center' alignItems='center' color='white'>
+    <Box  backgroundImage='./sydney.jpg' backgroundPosition='center' backgroundSize='cover'opacity='0.9'>
+        
+       <Box py='10' px='10' backgroundColor='black' opacity='0.6'>
+       <Flex flexDirection='column' justifyContent='center' alignItems='center' color='white'>
             <Text fontWeight='bold' fontSize='larger'>Contact us Today</Text>
             <Text>Please, speak to our customer support advisor and You can ask for a Free Quote and make an appointment on your prefered date, day and time.
             If you need to make changes to your booking, do not hesitate to do so, as long as you give us a sufficient notice in an advance. We are here for you and always ready to help!
@@ -27,6 +29,7 @@ const AboutUs = () => {
             </Text>
             <Box onClick={() => window.open("tel:+61426173439")} px='10' py='2.5' borderRadius='7px' border='1px solid white'>61426173439</Box>
         </Flex>
+       </Box>
     </Box>
    
 </Box>
