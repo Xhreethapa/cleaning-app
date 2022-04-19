@@ -5,78 +5,84 @@ const Faq = () => {
   return (
    
     <Box>
-        <Text display='flex' justifyContent='center' alignItems='center' my='10'> Frequently Asked Questions(FAQs)</Text>
-
+        <Text fontWeight="semibold" display='flex' justifyContent='center' alignItems='center' mt='10'> Frequently Asked Questions (FAQs)</Text>
+        <Text p={3} fontSize="13" textAlign="center" color="gray.600">Some questions that might help you in getting to know Elite Clean, these questions are collected according to the results of research questions that often arise</Text>
+        <Box w={{base:"100%", md:"800px"}} mx="auto">
         <Tabs isFitted variant='enclosed' outline='none'>
   <TabList mb='1em'>
-    <Tab>One</Tab>
-    <Tab>Two</Tab>
+    <Tab _focus={{outline:"none"}} fontSize="14" cursor="pointer">General</Tab>
+    <Tab _focus={{outline:"none"}} fontSize="14" cursor="pointer">Pricing</Tab>
   </TabList>
   <TabPanels>
     <TabPanel>
     <Accordion allowToggle>
-  <AccordionItem>
+  <AccordionItem fontSize="14" p={2}>
     <h2>
-      <AccordionButton>
-        <Box flex='1' textAlign='left'>
-          what is your name
+      <AccordionButton _focus={{outline:"none"}} >
+        <Box flex='1' textAlign='left' fontSize="14px">
+          What is End of Lease Cleaning?
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
-    <AccordionPanel pb={4}>
-     my name is elite cleaning thapa
-    </AccordionPanel>
-  </AccordionItem>
+    <AccordionPanel color="gray.500" pb={4}>
+    When you move out of your property and the new tenants have to move in, then require Deep Cleaning of the property.    </AccordionPanel>
+  </AccordionItem >
 
-  <AccordionItem>
+  <AccordionItem fontSize="14px" p={2}>
     <h2>
-      <AccordionButton>
-        <Box flex='1' textAlign='left'>
-          how old are you
-        </Box>
+      <AccordionButton _focus={{outline:"none"}}>
+        <Box flex='1' textAlign='left' fontSize="14px">
+      Do I Need to Provide any Cleaning Materials for End of Tenancy Cleaning?        </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
-    <AccordionPanel pb={4}>
-     hero hero 
-    </AccordionPanel>
+    <AccordionPanel pb={4} color="gray.500">
+    No, we provide all the cleaning Materials and Equipment to deep clean trough out your property.    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem fontSize="14px" p={2}>
+    <h2>
+      <AccordionButton _focus={{outline:"none"}}>
+        <Box flex='1' textAlign='left' fontSize="14px">
+      How long should a house cleaning take?        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4} color="gray.500">
+    It depends entirely on the size of your house! The minimum booking length is 3 hours, but you can always a request a longer booking if you need one. Depending on the number of bedrooms and bathrooms you have, our checkout.   </AccordionPanel>
   </AccordionItem>
 </Accordion>
     </TabPanel>
     <TabPanel>
     <Accordion allowToggle>
-  <AccordionItem>
+    <AccordionItem fontSize="14px" p={2}>
     <h2>
-      <AccordionButton>
-        <Box flex='1' textAlign='left'>
-          what is your name
-        </Box>
+      <AccordionButton _focus={{outline:"none"}}>
+        <Box flex='1' textAlign='left' fontSize="14px">
+      How much do you charge?      </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
-    <AccordionPanel pb={4}>
-     my name is elite cleaning thapa
-    </AccordionPanel>
+    <AccordionPanel pb={4} color="gray.500">
+    The cost of your end of lease clean generally depends on the size of your property. We charge in accordance with the number of bedrooms and bathrooms in your home. There are additional charges for extra services that are not included in the general scope of our standard bond clean. These include carpet steam cleaning, outside windows, extra balconies, full wall washing and extra blinds. If the property requires a more thorough cleaning, we may reserve the right to charge extra, this will be communicated to you before we start cleaning.   </AccordionPanel>
   </AccordionItem>
 
-  <AccordionItem>
+  <AccordionItem fontSize="14px" p={2}>
     <h2>
-      <AccordionButton>
-        <Box flex='1' textAlign='left'>
-          how old are you
-        </Box>
+      <AccordionButton _focus={{outline:"none"}}>
+        <Box flex='1' textAlign='left' fontSize="14px">
+     How would I get a free quote?      </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
-    <AccordionPanel pb={4}>
-     hero hero 
-    </AccordionPanel>
+    <AccordionPanel pb={4} color="gray.500">
+    If you only need an estimate for the cleaning of your leased property and do not want to book yet, we have got you covered. We offer free quotes that do not incur any obligations or charges. You can contact our support team to get your free estimate today. You can also go to booking page to get quote on the website. It allows clients to understand the costing and use the quote to compare the pricing with other cleaning companies. We have no hidden charges and provide the final costing upfront so that you can make an informed decision.     </AccordionPanel>
   </AccordionItem>
 </Accordion>
     </TabPanel>
   </TabPanels>
 </Tabs>
+</Box>
        
     </Box>
   )
