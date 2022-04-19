@@ -1,34 +1,19 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
+import {GiVacuumCleaner} from 'react-icons/gi'
 
 const OurServices = () => {
   return (
-   <Box backgroundColor='#DFDEFE' px='15' h='auto'>
-               <Text display='flex' justifyContent='center' alignItems='center' my='10' color='#5C4CB1' fontWeight='bold' fontSize='larger'> Our Services</Text>
-                <Text my='10' display='flex' justifyContent='center' alignItems='center'>Check out what services we offer</Text>
+   <Box backgroundColor='#DFDEFE' px='15' py={6}>
+               <Text textAlign='center' pt={8} color='#5C4CB1' fontWeight='bold' fontSize='larger'> Our Services</Text>
+                <Text display='flex' justifyContent='center' py={2} fontSize='14' color="gray.600" alignItems='center'>Check out what services we offer in Sydney</Text>
 
-                <Box marginBottom='5px'>
-                    <Flex backgroundColor='#5C4CB1' px='5' justifyContent='space-between' border='none'h='200px'  borderRadius='13px'>
-                        <Text color='white' fontWeight='bold' fontSize='larger'  marginTop='5'>End of Lease Cleaning</Text><Text>From $250</Text>
-                    </Flex>
-                    <Box backgroundColor='white' px='5' h='200px' width='85%' position='relative' left='25px' bottom='150px' py='5' borderRadius='11px' zIndex='100'>
-                       <Text color='#5C4CB1' marginBottom='5'> Book our Quality End of Lease Cleaning. Call us Now</Text>
-                       <Text>
-                        Book our 72 hours Bond-Back guarantee , Lease cleaning service and you can just sit back and relax while our professionals are on it.
-                       </Text>
-                    </Box>
-                </Box>
-                <Box>
-                    <Flex backgroundColor='#5C4CB1' px='5' justifyContent='space-between'  h='200px' border='none' borderRadius='13px'>
-                        <Text color='white' fontWeight='bold' fontSize='larger'>Carpet Steam Cleaning</Text><Text>From $150</Text>
-                    </Flex>
-                    <Box backgroundColor='white' px='5'  width='85%' position='relative' h='200px' left='25px' bottom='150px' py='5' borderRadius='11px'>
-                       <Text color='#5C4CB1' marginBottom='5'> Book our Quality End of Lease Cleaning. Call us Now</Text>
-                       <Text>
-                        best carpet cleaning in the town
-                       </Text>
-                    </Box>
-                </Box>
+             <Flex backgroundColor='#5C4CB1' flexDirection="column" color="gray.200" alignItems="center" border="1px solid gray" borderColor="gray.400" p={4} rounded="md" shadow="md">
+                <Box fontSize="40"><GiVacuumCleaner/></Box>
+                <Heading fontSize="18">End of Lease Cleaning</Heading>
+                 <Text textAlign="center" color="gray.200" fontSize="13" mt={2}>We Provide best end of lease cleaning Services in Sydney and areas. lkja sdflkjasdfllj lkasjdfladjf klj </Text>
+             </Flex>
+            
    </Box>
   )
 }
