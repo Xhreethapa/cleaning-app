@@ -1,33 +1,25 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import { BsTools } from 'react-icons/bs'
-import {GrMapLocation } from 'react-icons/gr'
-import { MdOutlineRequestQuote} from 'react-icons/md'
+import { GrLike, GrMapLocation } from 'react-icons/gr'
+import { MdOutlineRequestQuote } from 'react-icons/md'
 
 const Whyus = () => {
   return (
-    <Box backgroundColor='whitesmoke' py='10px' px='10px' display='flex' flexDirection='column' alignItems='center'>
-        <Text fontSize='16' fontWeight='bold' >Why choose Elite Cleaning?</Text>
-        <Flex flexDirection='column' alignItems='center' mt='10px'>
-        <Box width='70px' height='70px' borderRadius='50' backgroundColor='#DFDEFF' display='flex' alignItems='center' justifyContent='center'><BsTools fontSize='30' fontWeight='bold'/></Box>
+    <Box textAlign="left" my={6} backgroundColor='whitesmoke' py='10px' px='10px' display='flex' flexDirection='column' >
+      <Text color="red.600">WHY CHOOSE ELITE</Text>
+      <Heading color="blue.700" my={2}>Why Choose Our Service Provider</Heading>
+      <Flex alignItems="center">
+        <Box fontSize="30" rounded="full" color="red" p={4}>
+          <Image src="/satisfaction.png" h="64px" w="70px" />
+        </Box>
 
-            <Text fontSize='18' color='#5C4DB1' fontWeight='bolder'>Professional Service</Text>
-            <Text>You can enjoy your precious time doing whatever you want to do while professionals are taking care of cleaning for you.</Text>
-        </Flex>
+        <Box m={2}>
+          <Heading fontSize="24px" color="blue.700">Satisfaction Guaranteed</Heading>
+          <Text mt={2} color="gray.600">Our services include all satisfaction guarantees to the customers and vendors. </Text>
+        </Box>
+      </Flex>
 
-        <Flex flexDirection='column' alignItems='center' mt='10px'>
-        <Box width='70px' height='70px' borderRadius='50' backgroundColor='#DFDEFF' display='flex' alignItems='center' justifyContent='center'><GrMapLocation fontSize='30' fontWeight='bold'/></Box>
-
-            <Text fontSize='18' color='#5C4DB1' fontWeight='bolder'>Availability accross Sydney</Text>
-            <Text>You can enjoy your precious time doing whatever you want to do while professionals are taking care of cleaning for you.</Text>
-        </Flex>
-
-        <Flex flexDirection='column' alignItems='center' mt='10px'>
-        <Box width='70px' height='70px' borderRadius='50' backgroundColor='#DFDEFF' display='flex' alignItems='center' justifyContent='center'><MdOutlineRequestQuote fontSize='30' fontWeight='bold'/></Box>
-
-            <Text fontSize='18' color='#5C4DB1' fontWeight='bolder'>Instant Quote</Text>
-            <Text>You can enjoy your precious time doing whatever you want to do while professionals are taking care of cleaning for you.</Text>
-        </Flex>
 
         
 
