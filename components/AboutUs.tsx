@@ -4,6 +4,8 @@ import React from 'react'
 const AboutUs = () => {
   return (
 <Box backgroundColor='whitesmoke' >
+<Box maxWidth="1000" mx="auto" px={4}>
+
     <Text color='#5C4CB1' display='flex' justifyContent='center' alignItems='center' fontSize='larger' fontWeight='bold'>About Us</Text>
     <Flex gap={5} flexDirection='column' alignItems='center' fontSize='larger' fontWeight='bold'backgroundImage='./about.jpg' backgroundPosition='center' backgroundSize='cover' height='250px' py='5'>
         <Text>We are here to Help</Text>
@@ -62,7 +64,7 @@ const AboutUs = () => {
      
     </Box>
     
-   
+   </Box>
 </Box>
   )
 }

@@ -1,17 +1,18 @@
 import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
-import AboutUs from './Components/AboutUs'
-import Customer from './Components/Customer'
-import Faq from './Components/Faq'
-import Footer from './Components/Footer'
-import Intro from './Components/Intro'
-import MobNav from './Components/MobNav'
-import OurServices from './Components/OurServices'
-import { QuoteButton } from './Components/QuoteButton'
-import Whyus from './Components/Whyus'
+import AboutUs from '../components/AboutUs'
+import Faq from '../components/Faq'
+import Footer from '../components/Footer'
+import Intro from '../components/Intro'
+import MobNav from '../components/MobNav'
+import OurServices from '../components/OurServices'
+import { QuoteButton } from '../components/QuoteButton'
+import Whyus from '../components/Whyus'
 import Home from './Home'
-import Banner from './Components/Banner'
-import About from './Components/About'
+import Banner from '../components/Banner'
+import About from '../components/About'
+import Elite from '../components/Elite/Elite'
+import Comment from '../components/Elite/Comment'
 
 const MainDisplay = () => {
   return (
@@ -31,16 +32,18 @@ const MainDisplay = () => {
           <Banner/>
           <About/>
          <Box position="fixed" bottom='0' right='0' zIndex='300' >
-         <QuoteButton />
+         {/* <QuoteButton /> */}
          </Box>
          <Box backgroundColor='whitesmoke'>
            <MobNav/>
-           <Intro/>
+           {/* <Intro/> */}
            <Whyus/>
-           <Customer/>
+           <Elite/>
+           <Comment/>
+           {/* <Customer/> */}
            <Faq/>
-           <OurServices/>
-           <AboutUs/>
+           {/* <OurServices/> */}
+           {/* <AboutUs/> */}
            <Footer/>
          </Box>
           

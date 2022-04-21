@@ -6,7 +6,10 @@ import { MdOutlineRequestQuote } from 'react-icons/md'
 
 const Whyus = () => {
   return (
-    <Box textAlign="left" my={6} backgroundColor='white' py='10px' px={5} display='flex' flexDirection='column' >
+    <Box backgroundColor="#fafafa" py={4}>
+           <Box maxWidth="1000" mx="auto" px={4}>
+
+      <Box textAlign="left" my={6} backgroundColor='#fafafa' py='10px'  display='flex' flexDirection='column' >
      <Box mx="auto">
      <Text color="red.600">WHY CHOOSE ELITE</Text>
       <Heading fontSize={25} color="blue.700" my={2}>Why Choose Our Service Provider</Heading>
@@ -18,8 +21,8 @@ const Whyus = () => {
         </Box>
 
         <Box m={2} pl={{base:3, sm:7}}>
-          <Heading fontSize="22px" color="blue.700">Satisfaction Guaranteed</Heading>
-          <Text mt={2} color="gray.600" fontWeight="semib">Our services include all satisfaction guarantees to the customers and vendors. </Text>
+          <Heading fontSize="20px" color="blue.700">Satisfaction Guaranteed</Heading>
+          <Text mt={2} color="gray.400" fontSize="14" fontWeight="light">Our services include all satisfaction guarantees to the customers and vendors. </Text>
         </Box>
       </Flex>
 
@@ -29,8 +32,8 @@ const Whyus = () => {
         </Box>
 
         <Box m={2} pl={{base:3, sm:9}}>
-          <Heading fontSize="22px" color="blue.700">Screened & Trained Team</Heading>
-          <Text mt={2} color="gray.600" fontWeight="semib">Our services include all satisfaction guarantees to the customers and vendors. </Text>
+          <Heading fontSize="20px" color="blue.700">Screened & Trained Team</Heading>
+          <Text mt={2} color="gray.400" fontSize="14" fontWeight="light">Our services include all satisfaction guarantees to the customers and vendors. </Text>
         </Box>
       </Flex>
     </Flex>
@@ -42,18 +45,18 @@ const Whyus = () => {
         </Box>
 
         <Box m={2} pl={{base:3, sm:5}}>
-          <Heading fontSize="22px" color="blue.700">Flexible Arrival Time</Heading>
-          <Text mt={2} color="gray.600" fontWeight="semib">Our services include all satisfaction guarantees to the customers and vendors. </Text>
+          <Heading fontSize="20px" color="blue.700">Flexible Arrival Time</Heading>
+          <Text mt={2} color="gray.400" fontSize="14" fontWeight="light">Our services include all satisfaction guarantees to the customers and vendors. </Text>
         </Box>
       </Flex>  
       <Flex alignItems="center">
         <Box fontSize="30" rounded="full" color="red" >
-          <Image src="/price.png" h={{  md:"55px"}}/>
+          <Image src="/price.png" h={{  md:"55px"}} mr={{md:5}} pl={{md:2}}/>
         </Box>
 
-        <Box m={2} pl={{base:3, sm:6}}>
-          <Heading fontSize="22px" color="blue.700">Competitive Price</Heading>
-          <Text mt={2} color="gray.600" fontWeight="semib">Our services include all satisfaction guarantees to the customers and vendors. </Text>
+        <Box m={2} pl={{base:3, sm:6}} >
+          <Heading fontSize="20px" color="blue.700">Competitive Price</Heading>
+          <Text mt={2} color="gray.400" fontSize="14" fontWeight="light">Our services include all satisfaction guarantees to the customers and vendors. </Text>
         </Box>
       </Flex>
       </Flex>
@@ -63,6 +66,8 @@ const Whyus = () => {
      </Box>
 
 
+    </Box>
+    </Box>
     </Box>
   )
 }

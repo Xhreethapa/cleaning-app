@@ -1,24 +1,31 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Heading, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
 import React from 'react'
 
 const Faq = () => {
   return (
    
-    <Box>
-        <Text fontWeight="semibold" display='flex' justifyContent='center' alignItems='center' mt='10'> Frequently Asked Questions (FAQs)</Text>
-        <Text p={3} fontSize="13" textAlign="center" color="gray.600">Some questions that might help you in getting to know Elite Clean, these questions are collected according to the results of research questions that often arise</Text>
+    <Box pb={8}>
+           <Box maxWidth="1000" mx="auto" px={4}>
+
+  <Text color="red" fontSize="15">
+        FAQ'S
+      </Text>
+      <Heading fontSize="28" color="blue.700" >
+        Some Questions That Might Help You Know Elite Clean.
+      </Heading>   
+         <Text py={3} fontSize="13" textAlign="left" color="gray.600" lineHeight="2">Some questions that might help you in getting to know Elite Clean, these questions are collected according to the results of research questions that often arise</Text>
         <Box w={{base:"100%", md:"800px"}} mx="auto">
         <Tabs isFitted variant='enclosed' outline='none'>
-  <TabList mb='1em'>
-    <Tab _focus={{outline:"none"}} fontSize="14" cursor="pointer">General</Tab>
-    <Tab _focus={{outline:"none"}} fontSize="14" cursor="pointer">Pricing</Tab>
+  <TabList my='1em'>
+    <Tab _focus={{outline:"none"}} fontSize="16" fontWeight="semibold" cursor="pointer" >General</Tab>
+    <Tab _focus={{outline:"none"}} fontSize="16" fontWeight="semibold" cursor="pointer">Pricing</Tab>
   </TabList>
   <TabPanels>
     <TabPanel>
     <Accordion allowToggle>
-  <AccordionItem fontSize="14" p={2}>
+  <AccordionItem fontSize="14" p={2} borderTop="none">
     <h2>
-      <AccordionButton _focus={{outline:"none"}} >
+      <AccordionButton _focus={{outline:"none"}}  >
         <Box flex='1' textAlign='left' fontSize="14px">
           What is End of Lease Cleaning?
         </Box>
@@ -29,7 +36,7 @@ const Faq = () => {
     When you move out of your property and the new tenants have to move in, then require Deep Cleaning of the property.    </AccordionPanel>
   </AccordionItem >
 
-  <AccordionItem fontSize="14px" p={2}>
+  <AccordionItem fontSize="14px" p={2} >
     <h2>
       <AccordionButton _focus={{outline:"none"}}>
         <Box flex='1' textAlign='left' fontSize="14px">
@@ -55,7 +62,7 @@ const Faq = () => {
     </TabPanel>
     <TabPanel>
     <Accordion allowToggle>
-    <AccordionItem fontSize="14px" p={2}>
+    <AccordionItem fontSize="14px" p={2} borderTop="none">
     <h2>
       <AccordionButton _focus={{outline:"none"}}>
         <Box flex='1' textAlign='left' fontSize="14px">
@@ -83,7 +90,7 @@ const Faq = () => {
   </TabPanels>
 </Tabs>
 </Box>
-       
+       </Box>
     </Box>
   )
 }
