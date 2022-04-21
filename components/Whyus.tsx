@@ -1,8 +1,6 @@
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import React from 'react'
-import { BsTools } from 'react-icons/bs'
-import { GrLike, GrMapLocation } from 'react-icons/gr'
-import { MdOutlineRequestQuote } from 'react-icons/md'
+
 
 const Whyus = () => {
   return (
@@ -32,7 +30,7 @@ const Whyus = () => {
         </Box>
 
         <Box m={2} pl={{base:3, sm:9}}>
-          <Heading fontSize="20px" color="blue.700">Screened & Trained Team</Heading>
+          <Heading fontSize="20px" color="blue.700">Screened and Trained Team</Heading>
           <Text mt={2} color="gray.400" fontSize="14" fontWeight="light">Our services include all satisfaction guarantees to the customers and vendors. </Text>
         </Box>
       </Flex>

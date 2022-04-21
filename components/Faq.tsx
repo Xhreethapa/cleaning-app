@@ -8,7 +8,7 @@ const Faq = () => {
            <Box maxWidth="1000" mx="auto" px={4}>
 
   <Text color="red" fontSize="15">
-        FAQ'S
+        FAQ `&apos;`S
       </Text>
       <Heading fontSize="28" color="blue.700" >
         Some Questions That Might Help You Know Elite Clean.
