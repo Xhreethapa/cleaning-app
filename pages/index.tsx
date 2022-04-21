@@ -10,6 +10,8 @@ import OurServices from './Components/OurServices'
 import { QuoteButton } from './Components/QuoteButton'
 import Whyus from './Components/Whyus'
 import Home from './Home'
+import Banner from './Components/Banner'
+import About from './Components/About'
 
 const MainDisplay = () => {
   return (
@@ -25,7 +27,9 @@ const MainDisplay = () => {
    
             </Head>
         
-          <Home/>
+          {/* <Home/> */}
+          <Banner/>
+          <About/>
          <Box position="fixed" bottom='0' right='0' zIndex='300' >
          <QuoteButton />
          </Box>
