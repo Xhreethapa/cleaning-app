@@ -10,7 +10,7 @@ const Banner = () => {
         <Box backgroundColor="white"  >
                <Box maxWidth="1000" mx="auto" >
 
-          <Flex backgroundColor="white"  w={{base:"100%"}} maxWidth="1000" px={4} position="fixed" zIndex="1000"  top="0"  justifyContent="space-between" alignItems="center" py={6} gap={10} >
+          <Flex backgroundColor="white"  w={{base:"100%"}} maxWidth="1000" px={4} position="fixed" zIndex="1000"  top="30"  justifyContent="space-between" alignItems="center" py={6} gap={10} >
               <Box color="blue.700" display={{md:"none"}}>
               <GiHamburgerMenu fontSize={24}  cursor="pointer" />
 
@@ -27,7 +27,7 @@ const Banner = () => {
                 <Box>Contact Us</Box>
 
             </Flex>
-            <Button colorScheme="red" >Get a Quote</Button>
+            <Button colorScheme="red" fontSize="12"  >Get a Quote</Button>
             <Flex position="fixed" bottom='15px' right='15px' width='50px' height='50px' borderRadius='50px' backgroundColor='#FFBF67' alignItems='center' display='flex' justifyContent='center'  zIndex='200'>
           <FcCallback onClick={() => window.open("tel:+61426173439")}fontSize='24'/>
           </Flex>
