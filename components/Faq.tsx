@@ -13,7 +13,7 @@ const Faq = () => {
       <Heading fontSize="28" color="blue.700" >
         Some Questions That Might Help You Know Elite Clean.
       </Heading>   
-         <Text py={3} fontSize="13" textAlign="left" color="gray.600" lineHeight="2">Some questions that might help you in getting to know Elite Clean, these questions are collected according to the results of research questions that often arise</Text>
+         <Text py={3} textAlign="left" color="gray.400" fontSize="14" fontWeight="light">Some questions that might help you in getting to know Elite Clean, these questions are collected according to the results of research questions that often arise</Text>
         <Box w={{base:"100%", md:"800px"}} mx="auto">
         <Tabs isFitted variant='enclosed' outline='none'>
   <TabList my='1em'>

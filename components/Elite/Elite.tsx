@@ -18,7 +18,7 @@ const Elite = () => {
           <Flex zIndex="999" fontSize="13" mx="auto" alignItems="center" justifyContent="center" backgroundColor='red' rounded="full" w={9} fontWeight="semi-bold"  p={2} color="gray.100">1</Flex>
           <Box my={4} zIndex="999" backgroundColor="whitesmoke">
           <Heading fontSize="19" color="blue.700">Choose a Cleaning Quote</Heading>
-          <Text mt={1} w="70%" mx="auto" fontSize="12" color="gray.500" lineHeight="2">
+          <Text mt={1} fontWeight="light" w="70%" mx="auto" fontSize="13" color="gray.400" my={2} lineHeight="2">
             We provide best cleaning service in sydney lkjasdfklj kand in all
             around Austgrlia. Best Cleaning Quote can be launched. 
           </Text>
@@ -32,7 +32,7 @@ const Elite = () => {
           <Flex zIndex="999" fontSize="13" mx="auto" alignItems="center" justifyContent="center" backgroundColor='red' rounded="full" w={9} fontWeight="semi-bold"  p={2} color="gray.100">2</Flex>
           <Box my={4} zIndex="999" backgroundColor="whitesmoke">
           <Heading fontSize="19" color="blue.700">We Clean</Heading>
-          <Text mt={1} w="70%" mx="auto" fontSize="12" color="gray.500" lineHeight="2">
+          <Text mt={1} fontWeight="light" w="70%" mx="auto" fontSize="13" color="gray.400" my={2} lineHeight="2">
             We provide best cleaning service in sydney lkjasdfklj kand in all
             around Austgrlia. Best Cleaning Quote can be launched. 
           </Text>
@@ -46,7 +46,7 @@ const Elite = () => {
           <Flex zIndex="999" fontSize="13" mx="auto" alignItems="center" justifyContent="center" backgroundColor='red' rounded="full" w={9} fontWeight="semi-bold"  p={2} color="gray.100">3</Flex>
           <Box my={4} zIndex="999" backgroundColor="whitesmoke">
           <Heading fontSize="19" color="blue.700">Back to comfortable</Heading>
-          <Text mt={1} w="70%" mx="auto" fontSize="12" color="gray.500" lineHeight="2">
+          <Text mt={1} fontWeight="light" w="70%" mx="auto" fontSize="13" color="gray.400" my={2} lineHeight="2">
             We provide best cleaning service in sydney lkjasdfklj kand in all
             around Austgrlia. Best Cleaning Quote can be launched. 
           </Text>
@@ -54,7 +54,7 @@ const Elite = () => {
         </Flex>
       </Flex>
      </Flex>
-     <Box zIndex="1" display={{md:"none"}} position="absolute" top="80" left="50%" h="900" borderRight="2px dotted red"></Box>
+     <Box zIndex="1" display={{md:"none"}} position="absolute" top="80" left="50%" h="890" borderRight="2px dotted red"></Box>
      <Box zIndex="1" display={{base:"none", md:"inline"}} position="absolute" top="324px" h="60" w="650px" left="44" borderTop="2px dotted red" ></Box>
     </Box>
     </Box>
