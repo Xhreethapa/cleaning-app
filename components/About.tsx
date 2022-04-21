@@ -4,7 +4,37 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box w="100%" my={10}>
+    <Box w="100%" my={3}>
+        <Box position="relative" w="50%" left="7" display={{md:"none"}}>
+          <Image
+            h={320}
+            shadow="lg"
+            rounded="md"
+            w={220}
+            objectFit="cover"
+            src="https://odysseycleaning.com.au/wp-content/uploads/2019/06/service_img_01-350x350.jpg"
+          />
+          <Image
+            position="absolute"
+            top="32"
+            left="154px"
+            h={320}
+            shadow="lg"
+            rounded="md"
+            w={220}
+            objectFit="cover"
+            src="https://media-exp1.licdn.com/dms/image/C4D1BAQFmepVVpgnu3g/company-background_10000/0/1609790610458?e=2147483647&v=beta&t=8GIgvZxK-qmqRgGmYy1nQyaBd4V0le1ksldLwxIrj0s"
+          />
+          <Box backgroundColor="white" zIndex="999" rounded="md" shadow="lg" position="absolute" bottom="0" left="40px" px={4} py={3}>
+              <Flex alignItems="center" gap="2">
+                  <Heading color="blue.700" fontSize="24">10+</Heading>
+                  <Box fontSize="13" fontWeight="semibold" color="blue.600">
+                      <Text>Years</Text>
+                      <Text>Experience</Text>
+                  </Box>
+              </Flex>
+          </Box>
+        </Box>
       <Flex maxWidth="1000" mx="auto" px={4}>
         <Box position="relative" w="50%" display={{base:"none", md:"inline"}}>
           <Image
@@ -36,7 +66,7 @@ const About = () => {
               </Flex>
           </Box>
         </Box>
-        <Flex flexDirection="column" w={{base:"100%", md:"50%"}}>
+        <Flex flexDirection="column" w={{base:"100%", md:"50%"}}  mt={{base:40, md:0}}>
           <Text color="red">ABOUT US</Text>
           <Heading color="blue.700" fontSize={25}>
             Best Cleaning Services Provider in Sydney
