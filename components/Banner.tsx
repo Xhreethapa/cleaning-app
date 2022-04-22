@@ -1,11 +1,13 @@
 import { Box, Button, Flex } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 import { FcCallback } from 'react-icons/fc'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import Logo from './Banner/Logo'
 import Weare from './Banner/Weare'
+import RequestQuote from './Quote/RequestQuote'
 
 const Banner = () => {
+    const [quote, setQuote] = useState<boolean>(false)
     return (
         <Box backgroundColor="white"  >
                <Box maxWidth="1000" mx="auto" >
@@ -27,7 +29,9 @@ const Banner = () => {
                 <Box>Contact Us</Box>
 
             </Flex>
-            <Button colorScheme="red" fontSize="14"  >Get a Quote</Button>
+
+            <Button colorScheme="red" onClick={() => setQuote(!quote)} >Get a Quote</Button>
+
             <Flex position="fixed" bottom='15px' right='15px' width='50px' height='50px' borderRadius='50px' backgroundColor='#FFBF67' alignItems='center' display='flex' justifyContent='center'  zIndex='200'>
           <FcCallback onClick={() => window.open("tel:+61426173439")}fontSize='24'/>
           </Flex>
@@ -36,6 +40,7 @@ const Banner = () => {
           </Flex>
           <Weare/>
           </Box>
+          <RequestQuote quote={quote} setQuote={setQuote}/>
         </Box>
     )
 }
