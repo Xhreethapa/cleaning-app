@@ -9,6 +9,7 @@ import About from '../components/About'
 import Elite from '../components/Elite/Elite'
 import Comment from '../components/Elite/Comment'
 import Top from '../components/Top'
+import Blogs from '../components/Blogs'
 
 const MainDisplay = () => {
   return (
@@ -36,8 +37,9 @@ const MainDisplay = () => {
            <Whyus/>
            <Elite/>
            <Comment/>
+           <Blogs/>
            {/* <Customer/> */}
-           <Faq/>
+           <Faq  />
            {/* <OurServices/> */}
            {/* <AboutUs/> */}
            <Footer/>
