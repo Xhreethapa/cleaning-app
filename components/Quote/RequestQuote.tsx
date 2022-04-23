@@ -10,7 +10,7 @@ import {
   ModalOverlay,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import MultiForm from "./Multiform/MultiForm";
 
 interface Props { 
@@ -19,10 +19,12 @@ interface Props {
 }
 
 const RequestQuote = ({ quote, setQuote }: Props) => {
+    const [active, setActive] = useState(1)
+
   return (
-    <Modal size="sm" isOpen={quote} onClose={() => setQuote(!quote)}>
+    <Modal isOpen={quote} onClose={() => setQuote(!quote)}>
       <ModalOverlay />
-      <ModalContent color="gray.600" py={5}>
+      <ModalContent color="gray.600" py={5} mx={{base:5}}>
         <ModalHeader>Request a Quote</ModalHeader>
         <ModalCloseButton mt={6} color="blue.700" />
         <ModalBody mt={-5} color="gray.500">
@@ -30,20 +32,20 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
             <Text>Fill out the form or call</Text> <Text color="red">0434343434</Text>
           </Flex>
           <Text fontSize="12">to get your quote today!</Text>
-          <MultiForm/>
+          <MultiForm active={active} setActive={setActive}/>
         </ModalBody>
 
         <ModalFooter>
-          <Button
+        {active !== 3 && <Button
             w="100%"
             fontSize="15"
             backgroundColor="blue.700"
             color="gray.200"
-            
-            onClick={() => setQuote(!quote)}
+            outline="none"
+            onClick={() => setActive(active + 1)}
           >
             NEXT
-          </Button>
+          </Button>}
         </ModalFooter>
       </ModalContent>
     </Modal>
