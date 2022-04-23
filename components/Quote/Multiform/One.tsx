@@ -3,7 +3,17 @@ import React from "react";
 import { FaBed, FaToilet } from "react-icons/fa";
 import { GiDogHouse, GiHouseKeys } from "react-icons/gi";
 import {GrFormAdd, GrFormSubtract} from 'react-icons/gr'
-const One = ({ service, setService, bedroom, setBedroom, toilet, setToilet }) => {
+
+interface Props { 
+    service: string;
+    setService: (service: string) => void;
+    bedroom: number;
+    setBedroom: any
+    toilet:number
+    setToilet: any
+}
+
+const One = ({ service, setService, bedroom, setBedroom, toilet, setToilet }: Props) => {
   return (
     <Box color="gray.500">
       <Heading fontSize="16" fontWeight="semibold">

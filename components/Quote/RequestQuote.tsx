@@ -13,7 +13,12 @@ import {
 import React from "react";
 import MultiForm from "./Multiform/MultiForm";
 
-const RequestQuote = ({ quote, setQuote }) => {
+interface Props { 
+  quote:boolean
+  setQuote: any
+}
+
+const RequestQuote = ({ quote, setQuote }: Props) => {
   return (
     <Modal size="sm" isOpen={quote} onClose={() => setQuote(!quote)}>
       <ModalOverlay />
