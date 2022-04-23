@@ -37,7 +37,7 @@ const Comment = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Text fontSize="12" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
+          <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
           Very positive first experience with Elite Cleaning services. Rajat was great. The team did a great job with my end of lease cleaning. All surfaces left shiny and gleaming. They were very polite and listened to all my requests carefully. I got my full bond refunded. Thanks to the team.
           </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
@@ -58,7 +58,7 @@ const Comment = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Text fontSize="12" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
+          <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
           Recently got end of lease cleaning, totally satisfied with the job, guys are really helpful, will definately recommend this service. Thanks Mate!.
           </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
@@ -82,7 +82,7 @@ const Comment = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Text fontSize="12" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
+          <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
           Abhishek was professional and best at his service. His team did a splendid job on the end of the lease cleaning. He took extra effort to make sure that there are no comments from the property agent. Thanks guys.          </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
           </Box>
@@ -102,7 +102,7 @@ const Comment = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Text fontSize="12" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
+          <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
             Elite has changed the persceition of cleaning requires amount of detailing which they have. In the least amount of effort. Thanks mate!
           </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
@@ -126,7 +126,7 @@ const Comment = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Text fontSize="12" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
+          <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
           They were a delight to work with, and his service was of exceptional quality. When someone enjoys what they do, it shows in the quality and outcome of their work. It comes highly recommended.          </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
           </Box>
@@ -146,7 +146,7 @@ const Comment = () => {
               </Flex>
             </Flex>
           </Flex>
-          <Text fontSize="12" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
+          <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
             Elite has changed the persceition of cleaning requires amount of detailing which they have. In the least amount of effort. Thanks mate!
           </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
