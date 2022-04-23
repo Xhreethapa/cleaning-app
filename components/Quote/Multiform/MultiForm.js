@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { MultiStepForm, Step } from 'react-multi-form';
 import One from './One';
 const MultiForm = () => {
+
+
     const [service, setService] = useState('endoflease')
     const [bedroom, setBedroom] = useState(0)
     const [toilet, setToilet] = useState(0)
