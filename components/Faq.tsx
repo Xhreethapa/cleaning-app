@@ -4,7 +4,7 @@ import React from 'react'
 const Faq = () => {
   return (
    
-    <Box pb={8}>
+    <Box py={15} marginTop={70}>
            <Box maxWidth="1000" mx="auto" px={4}>
 
   <Text color="red" fontSize="15">
