@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { MultiStepForm, Step } from 'react-multi-form';
 import One from './One';
+import Three from './Three';
 import Two from './Two';
 const MultiForm = ({active, setActive}) => {
 
@@ -21,7 +22,7 @@ const MultiForm = ({active, setActive}) => {
           <Two active={active} setActive={setActive}/>
         </Step>
         <Step label="Three">
-          <p>Three</p>
+          <Three active={active} setActive={setActive}/>
         </Step>
       </MultiStepForm>
     </Box>

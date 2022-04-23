@@ -1,4 +1,5 @@
 import {
+    Box,
   Button,
   Flex,
   Modal,
@@ -33,18 +34,23 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
           </Flex>
           <Text fontSize="12">to get your quote today!</Text>
           <MultiForm active={active} setActive={setActive}/>
+         {active === 4 &&  <Box border="1px solid gray" borderColor="green.700" p={4} color="green.700" backgroundColor="green.100">
+              <Text fontSize="15">Thank you for your inquiry! We will get back to you at our earliest.</Text>
+          </Box>}
         </ModalBody>
 
         <ModalFooter>
-        {active !== 3 && <Button
+        {active !== 4 && <Button
             w="100%"
             fontSize="15"
             backgroundColor="blue.700"
             color="gray.200"
+            _focus={{outline:'none'}}
+            _hover={{backgroundColor:"none"}}
             outline="none"
             onClick={() => setActive(active + 1)}
           >
-            NEXT
+            {active === 3 ? 'SUBMIT' : 'NEXT'}
           </Button>}
         </ModalFooter>
       </ModalContent>
