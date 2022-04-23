@@ -27,7 +27,7 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
       <ModalOverlay />
       <ModalContent color="gray.600" py={5} mx={{base:5}}>
         <ModalHeader>Request a Quote</ModalHeader>
-        <ModalCloseButton mt={6} color="blue.700" />
+        <ModalCloseButton onClick={()=> setActive(1)} mt={6} color="blue.700" />
         <ModalBody mt={-5} color="gray.500">
           <Flex fontSize="12" gap={1}>
             <Text>Fill out the form or call</Text> <Text color="red">0434343434</Text>

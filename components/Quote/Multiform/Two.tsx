@@ -28,7 +28,8 @@ const Two = ({ active, setActive }: Props) => {
         gap={3}
         color="red.300"
         alignItems="center"
-        justifyContent="right"
+        w={20}
+        ml="auto"
         textAlign="right"
         onClick={() => active > 0 && setActive(active - 1)}
       >
