@@ -8,12 +8,12 @@ const Faq = () => {
            <Box maxWidth="1000" mx="auto" px={4}>
 
   <Text color="red" fontSize="15">
-        FAQ `&apos;`S
+        FAQ&apos;S
       </Text>
       <Heading fontSize="28" color="blue.700" >
         Some Questions That Might Help You Know Elite Clean.
       </Heading>   
-         <Text py={3} textAlign="left" color="gray.400" fontSize="14" fontWeight="light">Some questions that might help you in getting to know Elite Clean, these questions are collected according to the results of research questions that often arise</Text>
+         <Text py={2} textAlign="left" color="gray.400" fontSize="14" fontWeight="light">Some questions that might help you in getting to know Elite Clean, these questions are collected according to the results of research questions that often arise</Text>
         <Box w={{base:"100%", md:"800px"}} mx="auto">
         <Tabs isFitted variant='enclosed' outline='none'>
   <TabList my='1em'>
@@ -22,8 +22,8 @@ const Faq = () => {
   </TabList>
   <TabPanels>
     <TabPanel>
-    <Accordion allowToggle>
-  <AccordionItem fontSize="14" p={2} borderTop="none">
+    <Accordion allowToggle color="gray">
+  <AccordionItem fontSize="14"  p={2} borderTop="none">
     <h2>
       <AccordionButton _focus={{outline:"none"}}  >
         <Box flex='1' textAlign='left' fontSize="14px">
