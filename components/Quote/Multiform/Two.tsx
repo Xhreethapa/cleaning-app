@@ -19,9 +19,56 @@ import { SiAdobelightroom } from "react-icons/si";
 interface Props {
   active: number;
   setActive: any;
+  balcony: number;
+  setBalcony: any;
+  separateToilet: number;
+  setSeparateToilet: any;
+  studyRoom: number;
+  setStudyRoom: any;
+  blinds: number;
+  setBlinds: any;
+  wallWash: number;
+  setWallWash: any;
+  garage: number;
+  setGarage: any;
+  fridge: number;
+  setFridge: any;
+  steamLiving: number;
+  setSteamLiving: any;
+  steamBedroom: number;
+  setSteamBedroom: any;
+  steamHallway: number;
+  setSteamHallway: any;
+  steamStairs: number;
+  setSteamStairs: any;
 }
 
-const Two = ({ active, setActive }: Props) => {
+const Two = ({
+  active,
+  setActive,
+  balcony,
+  setBalcony,
+  separateToilet,
+  setSeparateToilet,
+  studyRoom,
+  setStudyRoom,
+  wallWash,
+  setWallWash,
+  fridge,
+  setFridge,
+  garage,
+  setGarage,
+  blinds,
+  setBlinds,
+  steamLiving,
+  setSteamLiving,
+  steamBedroom,
+  setSteamBedroom,
+  steamStairs,
+  setSteamStairs,
+  steamHallway,
+  setSteamHallway,
+}: Props) => {
   return (
     <Box color="gray.500">
       <Flex
@@ -83,11 +130,11 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
-            >
-              <GrFormSubtract />
+              onClick={() => balcony > 0 && setBalcony(balcony - 1)}>
+                   <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {balcony}
             </Text>
             <Text
               fontSize={14}
@@ -95,6 +142,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setBalcony(balcony + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -129,11 +177,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => separateToilet > 0 && setSeparateToilet(separateToilet - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {separateToilet}
             </Text>
             <Text
               fontSize={14}
@@ -141,6 +190,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setSeparateToilet(separateToilet + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -175,11 +225,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => studyRoom > 0 && setStudyRoom(studyRoom - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {studyRoom}
             </Text>
             <Text
               fontSize={14}
@@ -187,6 +238,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setStudyRoom(studyRoom + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -221,11 +273,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => wallWash > 0 && setWallWash(wallWash - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {wallWash}
             </Text>
             <Text
               fontSize={14}
@@ -233,6 +286,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setWallWash(wallWash + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -267,11 +321,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => fridge > 0 && setFridge(fridge - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {fridge}
             </Text>
             <Text
               fontSize={14}
@@ -279,6 +334,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setFridge(fridge + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -313,11 +369,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => garage > 0 && setGarage(garage - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {garage}
             </Text>
             <Text
               fontSize={14}
@@ -325,6 +382,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setGarage(garage + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -358,11 +416,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => blinds > 0 && setBlinds(blinds - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {blinds}
             </Text>
             <Text
               fontSize={14}
@@ -370,6 +429,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setBlinds(blinds + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -403,11 +463,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => steamBedroom > 0 && setSteamBedroom(steamBedroom - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {steamBedroom}
             </Text>
             <Text
               fontSize={14}
@@ -415,6 +476,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setSteamBedroom(steamBedroom + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -448,11 +510,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => steamLiving > 0 && setSteamLiving(steamLiving - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {steamLiving}
             </Text>
             <Text
               fontSize={14}
@@ -460,6 +523,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setSteamLiving(steamLiving + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -493,11 +557,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => steamStairs > 0 && setSteamStairs(steamStairs - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {steamStairs}
             </Text>
             <Text
               fontSize={14}
@@ -505,6 +570,7 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setSteamStairs(steamStairs + 1)}
             >
               <GrFormAdd />
             </Text>
@@ -538,11 +604,12 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => steamHallway > 0 && setSteamHallway(steamHallway - 1)}
             >
               <GrFormSubtract />
             </Text>
             <Text color="blue.700" fontWeight="semibold">
-              0
+              {steamHallway}
             </Text>
             <Text
               fontSize={14}
@@ -550,6 +617,8 @@ const Two = ({ active, setActive }: Props) => {
               px={2.5}
               py={2.5}
               rounded="md"
+              onClick={() => setSteamHallway(steamHallway + 1)}
+
             >
               <GrFormAdd />
             </Text>

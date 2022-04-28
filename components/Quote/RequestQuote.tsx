@@ -9,6 +9,7 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
+  Spinner,
   Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
@@ -21,9 +22,40 @@ interface Props {
 
 const RequestQuote = ({ quote, setQuote }: Props) => {
   const [active, setActive] = useState(1);
+  const [bedroom, setBedroom] = useState(0);
+  const [toilet, setToilet] = useState(0);
+  const [balcony, setBalcony] = useState(0);
+  const [separateToilet, setSeparateToilet] = useState(0);
+  const [studyRoom, setStudyRoom] = useState(0);
+  const [wallWash, setWallWash] = useState(0);
+  const [fridge, setFridge] = useState(0);
+  const [garage, setGarage] = useState(0);
+  const [blinds, setBlinds] = useState(0);
+  const [steamLiving, setSteamLiving] = useState(0);
+  const [steamBedroom, setSteamBedroom] = useState(0);
+  const [steamStairs, setSteamStairs] = useState(0);
+  const [steamHallway, setSteamHallway] = useState(0);
+  const [contact, setContact] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+  });
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const handleNext = (e: any) => {
+    e.preventDefault();
+    setIsLoading(true);
+    const timer = setTimeout(() => {
+      setActive(active + 1);
+      setIsLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  };
 
   const handleClick = async (e: any) => {
     e.preventDefault();
+    setIsLoading(true);
 
     try {
       const body = {
@@ -38,6 +70,9 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
+      setActive(active + 1);
+
+      setIsLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -59,7 +94,38 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
             <Text color="red">0434343434</Text>
           </Flex>
           <Text fontSize="12">to get your quote today!</Text>
-          <MultiForm active={active} setActive={setActive} />
+          <MultiForm
+            active={active}
+            setActive={setActive}
+            toilet={toilet}
+            setToilet={setToilet}
+            bedroom={bedroom}
+            setBedroom={setBedroom}
+            balcony={balcony}
+            setBalcony={setBalcony}
+            separateToilet={separateToilet}
+            setSeparateToilet={setSeparateToilet}
+            studyRoom={studyRoom}
+            setStudyRoom={setStudyRoom}
+            wallWash={wallWash}
+            setWallWash={setWallWash}
+            fridge={fridge}
+            setFridge={setFridge}
+            garage={garage}
+            setGarage={setGarage}
+            blinds={blinds}
+            setBlinds={setBlinds}
+            steamLiving={steamLiving}
+            setSteamLiving={setSteamLiving}
+            steamBedroom={steamBedroom}
+            setSteamBedroom={setSteamBedroom}
+            steamHallway={steamHallway}
+            setSteamHallway={setSteamHallway}
+            steamStairs={steamStairs}
+            setSteamStairs={setSteamStairs}
+            contact={contact}
+            setContact={setContact}
+          />
           {active === 4 && (
             <Box
               border="1px solid gray"
@@ -77,7 +143,7 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
         </ModalBody>
 
         <ModalFooter>
-          {active !== 4 && (
+          {active <= 2 && (
             <Button
               w="100%"
               fontSize="15"
@@ -86,12 +152,35 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
               _focus={{ outline: "none" }}
               _hover={{ backgroundColor: "none" }}
               outline="none"
-              onClick={() => setActive(active + 1)}
+              onClick={(e) => handleNext(e)}
+              disabled={
+                toilet < 1 ||
+                (active === 3 && contact.name === "") ||
+                (active === 3 && contact.email === "") ||
+                (active === 3 && contact.phone === "") ||
+                isLoading
+              }
             >
-              {active === 3 ? "SUBMIT" : "NEXT"}
+              {'Next'}
+              {isLoading && <Spinner ml={3} />}
+
             </Button>
           )}
-          <Button onClick={(e) => handleClick(e)}>Mate</Button>
+          {active === 3 && (
+            <Button
+              w="100%"
+              fontSize="15"
+              backgroundColor="blue.700"
+              color="gray.200"
+              _focus={{ outline: "none" }}
+              _hover={{ backgroundColor: "none" }}
+              outline="none"
+              onClick={(e) => handleClick(e)}
+            >
+              Submit
+              {isLoading && <Spinner ml={3} />}
+            </Button>
+          )}
         </ModalFooter>
       </ModalContent>
     </Modal>
