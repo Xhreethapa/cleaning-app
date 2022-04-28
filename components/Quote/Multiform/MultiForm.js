@@ -4,13 +4,40 @@ import { MultiStepForm, Step } from 'react-multi-form';
 import One from './One';
 import Three from './Three';
 import Two from './Two';
-const MultiForm = ({active, setActive}) => {
 
+
+const MultiForm = ({ active,
+  setActive,
+  balcony,
+  setBalcony,
+  bedroom,
+  setBedroom,
+  separateToilet,
+  setSeparateToilet,
+  studyRoom,
+  setStudyRoom,
+  toilet,
+  setToilet,
+  wallWash,
+  setWallWash,
+  fridge,
+  setFridge,
+  garage,
+  setGarage,
+  blinds,
+  setBlinds,
+  steamLiving,
+  setSteamLiving,
+  steamBedroom,
+  setSteamBedroom,
+  steamStairs,
+  setSteamStairs,
+  steamHallway,
+  setSteamHallway,
+  contact,
+  setContact }) => {
 
   const [service, setService] = useState('endoflease')
-  const [bedroom, setBedroom] = useState(0)
-  const [toilet, setToilet] = useState(0)
-
 
   return (
     <Box my={5}>
@@ -19,10 +46,24 @@ const MultiForm = ({active, setActive}) => {
           <One service={service} setService={setService} bedroom={bedroom} setBedroom={setBedroom} toilet={toilet} setToilet={setToilet} />
         </Step>
         <Step label="Two">
-          <Two active={active} setActive={setActive}/>
+          <Two
+            active={active} setActive={setActive}
+            bedroom={bedroom} setBedroom={setBedroom}
+            balcony={balcony} setBalcony={setBalcony}
+            separateToilet={separateToilet} setSeparateToilet={setSeparateToilet}
+            studyRoom={studyRoom} setStudyRoom={setStudyRoom}
+            wallWash={wallWash} setWallWash={setWallWash} s
+            fridge={fridge} setFridge={setFridge}
+            garage={garage} setGarage={setGarage}
+            blinds={blinds} setBlinds={setBlinds}
+            steamLiving={steamLiving} setSteamLiving={setSteamLiving}
+            steamBedroom={steamBedroom} setSteamBedroom={setSteamBedroom}
+            steamHallway={steamHallway} setSteamHallway={setSteamHallway}
+            steamStairs={steamStairs} setSteamStairs={setSteamStairs}
+          />
         </Step>
         <Step label="Three">
-          <Three active={active} setActive={setActive}/>
+          <Three contact={contact} setContact={setContact} active={active} setActive={setActive} />
         </Step>
       </MultiStepForm>
     </Box>

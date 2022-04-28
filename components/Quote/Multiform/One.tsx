@@ -11,6 +11,7 @@ interface Props {
     setBedroom: any
     toilet:number
     setToilet: any
+
 }
 
 const One = ({ service, setService, bedroom, setBedroom, toilet, setToilet }: Props) => {
