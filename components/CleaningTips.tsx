@@ -61,7 +61,7 @@ const CleaningTips = () => {
             <Flex py='20'>
                 <Flex flex='1' flexWrap='wrap' gap={5} >
                     {blogs.map(index =>(
-                         <Flex flexDirection='column' maxWidth='285px' key={index}>
+                         <Flex flexDirection='column' maxWidth='285px' >
                          <Box >
                              <Box backgroundImage={index.photo} height='180' width='277px' backgroundSize='cover' backgroundPosition='center' borderRadius='9px'></Box>
                              
