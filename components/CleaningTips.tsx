@@ -45,7 +45,7 @@ const CleaningTips = () => {
   return (
     <Box>
         <Box>
-            <Flex justifyContent='center' flexDirection={{base:'column', sm:'cloumn', md:'row'}} gap={3}>
+            <Flex justifyContent='center' flexDirection={{base:'column', sm:'column', md:'row'}} gap={3}>
                 <Box  height='270' width='90%'>
                     <Box backgroundImage='https://cdn.apartmenttherapy.info/image/upload/v1603403266/at/organize-clean/cleaning-rubber-tree-plant.jpg' borderRadius='6px'  backgroundSize='cover' backgroundPosition='center' height='270px' width={{base:'300px', sm:'350px', md:"400px"}}></Box>
                 </Box>
