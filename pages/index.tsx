@@ -10,6 +10,7 @@ import Elite from '../components/Elite/Elite'
 import Comment from '../components/Elite/Comment'
 import Top from '../components/Top'
 import Blogs from '../components/Blogs'
+import Weare from '../components/Banner/Weare'
 
 const MainDisplay = () => {
   return (
@@ -27,6 +28,7 @@ const MainDisplay = () => {
           <Top/>
           {/* <Home/> */}
           <Banner/>
+          <Weare/>
           <About/>
          <Box position="fixed" bottom='0' right='0' zIndex='300' >
          {/* <QuoteButton /> */}
