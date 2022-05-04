@@ -60,26 +60,26 @@ const CleaningTips = () => {
             </Flex>
             <Flex py='20'>
                 <Flex flex='1' flexWrap='wrap' gap={5} >
-                    {blogs.map(index =>(
-                         <Flex flexDirection='column' maxWidth='285px' >
+                    {blogs.map( (item, index)=>(
+                         <Flex flexDirection='column' maxWidth='285px' key={index}>
                          <Box >
-                             <Box backgroundImage={index.photo} height='180' width='277px' backgroundSize='cover' backgroundPosition='center' borderRadius='9px'></Box>
+                             <Box backgroundImage={item.photo} height='180' width='277px' backgroundSize='cover' backgroundPosition='center' borderRadius='9px'></Box>
                              
                          </Box>
                          <Flex color='gray.400' justifyContent='space-between' px='3'pt='2'>
                              <Flex gap='2'alignItems='center' fontSize='12' >
-                             <AiFillSave/><Text> {index.day}</Text>
+                             <AiFillSave/><Text> {item.day}</Text>
                              </Flex>
                              <Flex gap='2'alignItems='center'fontSize='12' >
                              <BsFillEyeFill/><Text>123</Text>
                              </Flex>
  
                          </Flex>
-                        <Flex color='blue.800' fontSize='16'fontWeight='bold' px='2'>{index.title}
+                        <Flex color='blue.800' fontSize='16'fontWeight='bold' px='2'>{item.title}
                             
                         </Flex>
                         <Box color='gray' fontSize='13' px='2' py='1'>
-                            {index.desc}
+                            {item.desc}
                         </Box>
                         <Text fontWeight='semibold' fontSize='smaller' color='red.500' px='2'> Read More...</Text>
  
