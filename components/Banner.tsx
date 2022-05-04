@@ -1,4 +1,5 @@
 import { Box, Button, Flex } from '@chakra-ui/react'
+import Link from 'next/link'
 import React, { useState } from 'react'
 import { FcCallback } from 'react-icons/fc'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -24,7 +25,7 @@ const Banner = () => {
 
                 <Box>Service</Box>
 
-                <Box>Pages</Box>
+                <Box><Link href='/allBlogs'>Blogs</Link> </Box>
 
                 <Box>Contact Us</Box>
 
@@ -38,7 +39,7 @@ const Banner = () => {
            
 
           </Flex>
-          <Weare/>
+         
           </Box>
           <RequestQuote quote={quote} setQuote={setQuote}/>
         </Box>
