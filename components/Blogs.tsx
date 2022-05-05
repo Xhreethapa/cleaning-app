@@ -19,7 +19,7 @@ const Blogs = () => {
                        </Flex>
                        <Heading px='5' color='blue.800' fontSize='25' fontWeight='bold'>How to clean your Plant yourself </Heading>
                        <Box px='15' color='gray' my='5' fontSize='14'>
-                           Hello, i am mr. plant. i want to grow big plants. do you want too??, well i will show you how.
+                       Wash the Plant With a Spray Nozzle. The easiest method for cleaning medium to large houseplants is to move them to the kitchen sink, shower
                        </Box>
                        <Text py='6' px='15' fontWeight='semibold' fontSize='largeer' color='red.500'cursor='pointer' > Read More...</Text>
 
@@ -32,7 +32,7 @@ const Blogs = () => {
                        </Flex>
                        <Heading px='5' color='blue.800' fontSize='25'fontWeight='bold'>How to  keep your Carpet Clean</Heading>
                        <Box px='15' color='gray' my='5' fontSize='14'>
-                           Hello, i am mr. Carpet. i want to grow big Vaccume. do you want too??, well i will show you how.
+                       In a bowl or small bucket, mix one part white vinegar with three parts water. Dip the bristles of the scrub brush into the solution 
                        </Box>
                        <Text py='6' px='15' fontWeight='semibold' fontSize='largeer' color='red.500' cursor='pointer' > Read More...</Text>
 
@@ -45,7 +45,7 @@ const Blogs = () => {
                        </Flex>
                        <Heading px='5' color='blue.800' fontSize='25' fontWeight='bold'>Easy Ways to keep your kitchen clean</Heading>
                        <Box px='15' color='gray' my='5' fontSize='14'>
-                           Hello, i am mr. plant. i want to grow big plants. do you want too??, well i will show you how.
+                       There are a lot of things out there that the combination of baking soda and vinegar can clean. You may wonder whether it’s actually that great?
                        </Box>
                        <Text py='6' px='15' fontWeight='semibold' fontSize='largeer' color='red.500' cursor='pointer' > Read More...</Text>
 

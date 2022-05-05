@@ -31,7 +31,7 @@ const Banner = () => {
 
             </Flex>
 
-            <Button colorScheme="red" onClick={() => setQuote(!quote)} >Get a Quote</Button>
+            <Button  outline={{ border:"0px solid white"}} colorScheme="red" onClick={() => setQuote(!quote)} py={{base:'5px', sm:'5px', md:'5'}} fontSize={{base:'13px', sm:'15px',md:'17px'}}>Get a Quote</Button>
 
             <Flex position="fixed" bottom='15px' right='15px' width='50px' height='50px' borderRadius='50px' backgroundColor='#FFBF67' alignItems='center' display='flex' justifyContent='center'  zIndex='200'>
           <FcCallback onClick={() => window.open("tel:+61426173439")}fontSize='24'/>
