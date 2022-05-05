@@ -24,10 +24,10 @@ const Comment = () => {
        <Flex>
        <Box position="relative" backgroundColor="white" m="5" mx="auto" py={8} px={8} shadow="xl" rounded="md" my={14} maxWidth={400}>
           <Flex alignItems="center" gap={3} >
-            <Image src="https://english.onlinekhabar.com/wp-content/uploads/2021/12/Karishma-Manandhar-SEE-2075.jpg" borderRadius="full" h={12} maxW={12} objectFit="cover" />
+            <Image src="https://lh3.googleusercontent.com/a-/AOh14GhfLQXTd_3wH4ySOxsOGmixlOs5SWN-zTM9cOl1=w120-h120-p-rp-mo-br100" borderRadius="full" h={12} maxW={12} objectFit="cover" />
             <Flex flexDirection="column" ml={2} textAlign="left">
-              <Heading fontSize="19" color="blue.700">Roseanne</Heading>
-              <Text fontSize="13" color="gray.400">Campsie, Sydney</Text>
+              <Heading fontSize="19" color="blue.700">Online Buy live</Heading>
+              <Text fontSize="13" color="gray.400">Summer Hills, Sydney</Text>
               <Flex color="yellow.300" fontSize="13" my={2} gap={1}>
                 <StarIcon/>
                 <StarIcon/>
@@ -38,17 +38,17 @@ const Comment = () => {
             </Flex>
           </Flex>
           <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
-          Very positive first experience with Elite Cleaning services. Rajat was great. The team did a great job with my end of lease cleaning. All surfaces left shiny and gleaming. They were very polite and listened to all my requests carefully. I got my full bond refunded. Thanks to the team.
-          </Text>
+          Guys were professional and also so polite in talking . I  used this company for my office deep cleaning. Now my office looks soo much better with good frangrance. Love to us this company again and again.
+Highly recommend . Thank you Elite cleaning services for your fantastic work .          </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
           </Box>
 
           <Box display={{base:"none", md:"inline"}} position="relative" backgroundColor="white" m="5" mx="auto" py={8} px={8} shadow="xl" rounded="md" my={14} maxWidth={400}>
           <Flex alignItems="center" gap={3} >
-            <Image src="https://english.onlinekhabar.com/wp-content/uploads/2021/12/Karishma-Manandhar-SEE-2075.jpg" borderRadius="full" h={12} maxW={12} objectFit="cover" />
+            <Image src="https://lh3.googleusercontent.com/a-/AOh14GjBE8je8fWI_FLlOQgywevZcfxtkPrMb99lEYNm5Q=w120-h120-p-rp-mo-br100" borderRadius="full" h={12} maxW={12} objectFit="cover" />
             <Flex flexDirection="column" ml={2} textAlign="left">
-              <Heading fontSize="19" color="blue.700">Simran Thapa</Heading>
-              <Text fontSize="13" color="gray.400">Manly, Sydney</Text>
+              <Heading fontSize="19" color="blue.700">Bishal KC</Heading>
+              <Text fontSize="13" color="gray.400">Redfern, Sydney</Text>
               <Flex color="yellow.300" fontSize="13" my={2} gap={1}>
                 <StarIcon/>
                 <StarIcon/>
@@ -59,8 +59,7 @@ const Comment = () => {
             </Flex>
           </Flex>
           <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
-          Recently got end of lease cleaning, totally satisfied with the job, guys are really helpful, will definately recommend this service. Thanks Mate!.
-          </Text>
+          Nice and friendly cleaners got all my bonds back          </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
           </Box>
        </Flex>
@@ -133,10 +132,10 @@ const Comment = () => {
 
           <Box display={{base:"none", md:"inline"}} position="relative" backgroundColor="white" m="5" mx="auto" py={8} px={8} shadow="xl" rounded="md" my={14} maxWidth={400}>
           <Flex alignItems="center" gap={3} >
-            <Image src="https://english.onlinekhabar.com/wp-content/uploads/2021/12/Karishma-Manandhar-SEE-2075.jpg" borderRadius="full" h={12} maxW={12} objectFit="cover" />
+            <Image src="https://lh3.googleusercontent.com/a/AATXAJyQuW41vPLebr1UIGhJ-CExaMHlhdg--qynhuMv=w120-h120-p-rp-mo-br100" borderRadius="full" h={12} maxW={12} objectFit="cover" />
             <Flex flexDirection="column" ml={2} textAlign="left">
-              <Heading fontSize="19" color="blue.700">Jia Chaterjee</Heading>
-              <Text fontSize="13" color="gray.400">Concord, Sydney</Text>
+              <Heading fontSize="19" color="blue.700">Rajat Chhetri</Heading>
+              <Text fontSize="13" color="gray.400">Redfern, Sydney</Text>
               <Flex color="yellow.300" fontSize="13" my={2} gap={1}>
                 <StarIcon/>
                 <StarIcon/>
@@ -147,7 +146,7 @@ const Comment = () => {
             </Flex>
           </Flex>
           <Text fontSize="13" textAlign="left" mt={5} mb={2} fontWeight="light" color="gray.400" >
-            Elite has changed the persceition of cleaning requires amount of detailing which they have. In the least amount of effort. Thanks mate!
+          Punctual and hardworking guys.. thanks for the best service
           </Text>
           <Image src="/elite.png" h={20} maxW={20} position="absolute" top="4" right="10"/>
           </Box>
