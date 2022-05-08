@@ -169,7 +169,7 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
                 toilet < 1 ||
                 (active === 3 && contact.name === "" || undefined) ||
                 (active === 3 && contact.email === "" || undefined) ||
-                (active === 3 && contact.phone === "" || undefined) ||
+                (active === 3 && contact.phone === undefined) ||
                 isLoading
               }
             >
