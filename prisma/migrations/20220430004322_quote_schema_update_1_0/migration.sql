@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Quotes" ALTER COLUMN "phone" SET DATA TYPE TEXT;

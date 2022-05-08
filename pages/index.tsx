@@ -10,8 +10,12 @@ import Elite from '../components/Elite/Elite'
 import Comment from '../components/Elite/Comment'
 import Top from '../components/Top'
 import Blogs from '../components/Blogs'
+import Maya from '../components/maya'
+import {useSession, signIn, signOut} from 'next-auth/react';
 
 const MainDisplay = () => {
+  const {data: session} = useSession();
+
   return (
     <div>
       <Head>
@@ -27,6 +31,7 @@ const MainDisplay = () => {
           <Top/>
           {/* <Home/> */}
           <Banner/>
+         {session ? <div  onClick={() => signOut()} >ok cha ta</div> : <div onClick={() => signIn("email", {email:"wedocleaning99@gmail.com"})}>Bhaak Muji </div>}
           <About/>
          <Box position="fixed" bottom='0' right='0' zIndex='300' >
          {/* <QuoteButton /> */}
