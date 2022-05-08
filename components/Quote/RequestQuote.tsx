@@ -38,7 +38,7 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
   const [contact, setContact] = useState({
     name: "",
     email: "",
-    phone: "",
+    phone:0,
     address: "",
   });
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -59,11 +59,23 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
 
     try {
       const body = {
-        fullName: "Milan Adhikari",
-        email: "milan@yahoo.com",
-        phone: 1232342323,
-        bedrooms: 2,
-        bathrooms: 2,
+        fullName: contact.name,
+        email: contact.email,
+        phone: contact.phone,
+        bedrooms: bedroom,
+        bathrooms: toilet,
+        balcony:balcony,
+        separateToilet:separateToilet,
+        studyRoom: studyRoom,
+        wallWash: wallWash,
+        fridge: fridge,
+        garage:garage,
+        blinds: blinds,
+        steamLiving: steamLiving,
+        steamBedroom: steamBedroom,
+        steamHallway: steamHallway,
+        steamStairs: steamStairs,
+        
       };
       await fetch("api/create_quote", {
         method: "POST",
