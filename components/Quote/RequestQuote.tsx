@@ -164,12 +164,12 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
               _focus={{ outline: "none" }}
               _hover={{ backgroundColor: "none" }}
               outline="none"
-              onClick={(e) => handleNext(e)}
+              onClick={(e:any) => handleNext(e)}
               disabled={
                 toilet < 1 ||
-                (active === 3 && contact.name === "") ||
-                (active === 3 && contact.email === "") ||
-                (active === 3 && contact.phone === "") ||
+                (active === 3 && contact.name === "" || undefined) ||
+                (active === 3 && contact.email === "" || undefined) ||
+                (active === 3 && contact.phone === "" || undefined) ||
                 isLoading
               }
             >
