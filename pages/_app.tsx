@@ -3,10 +3,10 @@ import { ChakraProvider } from '@chakra-ui/react'
 import {SessionProvider} from "next-auth/react"
 import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }:AppProps) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
      return (
-          <SessionProvider session={pageProps.session}>
+          <SessionProvider options={{clientMaxAge: 0}} session={pageProps.session}>
 
                <ChakraProvider>
                     <Component {...pageProps} />
