@@ -103,7 +103,7 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
         <ModalBody mt={-5} color="gray.500">
           <Flex fontSize="12" gap={1}>
             <Text>Fill out the form or call</Text>{" "}
-            <Text color="red">0434343434</Text>
+            <Text cursor='pointer' onClick={() => window.open("tel:+61426173439")}color="red">+61426173439</Text>
           </Flex>
           <Text fontSize="12">to get your quote today!</Text>
           <MultiForm
@@ -164,12 +164,12 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
               _focus={{ outline: "none" }}
               _hover={{ backgroundColor: "none" }}
               outline="none"
-              onClick={(e) => handleNext(e)}
+              onClick={(e:any) => handleNext(e)}
               disabled={
                 toilet < 1 ||
-                (active === 3 && contact.name === "") ||
-                (active === 3 && contact.email === "") ||
-                (active === 3 && contact.phone === "") ||
+                (active === 3 && contact.name === "" || undefined) ||
+                (active === 3 && contact.email === "" || undefined) ||
+                (active === 3 && contact.phone === undefined) ||
                 isLoading
               }
             >

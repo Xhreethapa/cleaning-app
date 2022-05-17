@@ -19,8 +19,7 @@ const Elite = () => {
           <Box my={4} zIndex="999" backgroundColor="whitesmoke">
           <Heading fontSize="19" color="blue.700">Choose a Cleaning Quote</Heading>
           <Text mt={1} fontWeight="light" w="70%" mx="auto" fontSize="14" color="gray.400" my={2} lineHeight="2">
-            We provide best cleaning service in sydney lkjasdfklj kand in all
-            around Austgrlia. Best Cleaning Quote can be launched. 
+           you can just call us for the quote or fill in the get quote form and we will get back to you with the Quote. 
           </Text>
           </Box>
         </Flex>
@@ -33,8 +32,7 @@ const Elite = () => {
           <Box my={4} zIndex="999" backgroundColor="whitesmoke">
           <Heading fontSize="19" color="blue.700">We Clean</Heading>
           <Text mt={1} fontWeight="light" w="70%" mx="auto" fontSize="14" color="gray.400" my={2} lineHeight="2">
-            We provide best cleaning service in sydney lkjasdfklj kand in all
-            around Austgrlia. Best Cleaning Quote can be launched. 
+            We provide best End of lease cleaning service in sydney. we will come on your prefered date and time and do what we do best.
           </Text>
           </Box>
         </Flex>
@@ -47,8 +45,7 @@ const Elite = () => {
           <Box my={4} zIndex="999" backgroundColor="whitesmoke">
           <Heading fontSize="19" color="blue.700">Back to comfortable</Heading>
           <Text mt={1} fontWeight="light" w="70%" mx="auto"color="gray.400" fontSize="14"  my={2} lineHeight="2">
-            We provide best cleaning service in sydney lkjasdfklj kand in all
-            around Austgrlia. Best Cleaning Quote can be launched. 
+            We will make sure you get the property back just like you wished. we also have 72-hours of Bond-Back guarantee. 
           </Text>
           </Box>
         </Flex>
