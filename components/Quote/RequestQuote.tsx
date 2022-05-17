@@ -38,7 +38,7 @@ const RequestQuote = ({ quote, setQuote }: Props) => {
   const [contact, setContact] = useState({
     name: "",
     email: "",
-    phone:0,
+    phone:"",
     address: "",
   });
   const [isLoading, setIsLoading] = useState<boolean>(false);
