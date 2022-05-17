@@ -6,7 +6,7 @@ import { AppProps } from 'next/app';
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
      return (
-          <SessionProvider options={{clientMaxAge: 0}} session={pageProps.session}>
+          <SessionProvider session={pageProps.session}>
 
                <ChakraProvider>
                     <Component {...pageProps} />

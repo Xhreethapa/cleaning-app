@@ -12,9 +12,9 @@ interface Props {
   plainPassword:String
   hashedPassword:any
 }
-const confirmPasswordHash = (plainPassword, hashedPassword) => {
+const confirmPasswordHash = (plainPassword:String, hashedPassword:any) => {
     return new Promise(resolve => {
-        bcrypt.compare(plainPassword, hashedPassword, function(err, res) {
+        bcrypt.compare(plainPassword, hashedPassword, function(res:any){
             resolve(res);
         });
     })
@@ -76,7 +76,7 @@ const configuration = {
         }),
     ],
     callbacks: {
-        async signIn(user, account, profile) {
+        async signIn(user:any, account:any, profile:any) {
             try
             {
                 //the user object is wrapped in another user object so extract it
@@ -109,7 +109,7 @@ const configuration = {
             }
 
         },
-        async register(firstName, lastName, email, password) {
+        async register(firstName:string, lastName:string, email:string, password:string) {
             try
             {
                 await prisma.users.create({
@@ -129,7 +129,7 @@ const configuration = {
             }
 
         },
-        async session(session, token) {
+        async session(session:any, token:any) {
             if (userAccount !== null)
             {
                 //session.user = userAccount;
@@ -151,7 +151,7 @@ const configuration = {
             }
             return session;
         },
-        async jwt(token, user, account, profile, isNewUser) {
+        async jwt(token:any, user:any, account:any, profile:any, isNewUser:boolean) {
             console.log("JWT callback. Got User: ", user);
             if (typeof user !== typeof undefined)
             {
@@ -161,4 +161,4 @@ const configuration = {
         }
     }
 }
-export default (req, res) => NextAuth(req, res, configuration)
+export default (req:any, res:any) => NextAuth(req, res, configuration)
