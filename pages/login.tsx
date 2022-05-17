@@ -16,7 +16,7 @@ export default function Home() {
 
     signIn("credentials", {
         email:user, password, callbackUrl: `${window.location.origin}/dashboard`, redirect: false }
-    ).then(function(result){
+    ).then(function(result:any){
         if (result?.error !== null)
         {
             if (result?.status === 401)
