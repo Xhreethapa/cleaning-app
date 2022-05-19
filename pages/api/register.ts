@@ -3,6 +3,8 @@ const prisma = new PrismaClient();
 const bcrypt = require('bcrypt');
 
 export default async (req:any, res:any) => {
+    console.log('lkjsdlkfj')
+
     if (req.method === "POST")
     {
         const {firstName, lastName, email, password} = req.body;
@@ -21,7 +23,7 @@ export default async (req:any, res:any) => {
 
             return res.status(200).end();
         }
-        catch (err)
+        catch (err:any)
         {
             return res.status(503).json({err: err.toString()});
         }
