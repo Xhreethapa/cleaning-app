@@ -23,7 +23,7 @@ export default function Registered() {
         await axios.post('/api/register', data);
         signIn("credentials", {
             email, password, callbackUrl: `${window.location.origin}/dashboard`, redirect: false }
-        ).then(function(result) {
+        ).then(function(result:any) {
             router.push(result.url)
         }).catch(err => {
             alert("Failed to register: " + err.toString())
