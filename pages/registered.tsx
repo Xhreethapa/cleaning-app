@@ -4,7 +4,7 @@ import {useState} from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import axios from 'axios'
-export default function Register() {
+export default function Registered() {
     const router = useRouter();
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');

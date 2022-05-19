@@ -1,20 +1,15 @@
 import NextAuth from 'next-auth'
 import { PrismaClient } from '@prisma/client'
 import CredentialsProvider from "next-auth/providers/credentials";
-
-
-let userAccount:any = null;
+let userAccount = null;
 
 const prisma = new PrismaClient();
 
 const bcrypt = require('bcrypt');
-interface Props { 
-  plainPassword:String
-  hashedPassword:any
-}
-const confirmPasswordHash = (plainPassword:String, hashedPassword:any) => {
+
+const confirmPasswordHash = (plainPassword, hashedPassword) => {
     return new Promise(resolve => {
-        bcrypt.compare(plainPassword, hashedPassword, function(res:any){
+        bcrypt.compare(plainPassword, hashedPassword, function(err, res) {
             resolve(res);
         });
     })
@@ -33,7 +28,7 @@ const configuration = {
             id: "credentials",
             name: "credentials",
             credentials: {},
-            async authorize(credentials : any) {
+            async authorize(credentials ) {
                 try
                 {
                     const user = await prisma.users.findFirst({
@@ -76,7 +71,7 @@ const configuration = {
         }),
     ],
     callbacks: {
-        async signIn(user:any, account:any, profile:any) {
+        async signIn(user, account, profile) {
             try
             {
                 //the user object is wrapped in another user object so extract it
@@ -109,7 +104,7 @@ const configuration = {
             }
 
         },
-        async register(firstName:string, lastName:string, email:string, password:string) {
+        async register(firstName, lastName, email, password) {
             try
             {
                 await prisma.users.create({
@@ -129,7 +124,7 @@ const configuration = {
             }
 
         },
-        async session(session:any, token:any) {
+        async session(session, token) {
             if (userAccount !== null)
             {
                 //session.user = userAccount;
@@ -151,7 +146,7 @@ const configuration = {
             }
             return session;
         },
-        async jwt(token:any, user:any, account:any, profile:any, isNewUser:boolean) {
+        async jwt(token, user, account, profile, isNewUser) {
             console.log("JWT callback. Got User: ", user);
             if (typeof user !== typeof undefined)
             {
@@ -161,4 +156,4 @@ const configuration = {
         }
     }
 }
-export default (req:any, res:any) => NextAuth(req, res, configuration)
+export default (req, res) => NextAuth(req, res, configuration)

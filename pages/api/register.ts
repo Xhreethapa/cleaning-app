@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient();
 const bcrypt = require('bcrypt');
 
-export default async (req, res) => {
+export default async (req:any, res:any) => {
     if (req.method === "POST")
     {
         const {firstName, lastName, email, password} = req.body;
