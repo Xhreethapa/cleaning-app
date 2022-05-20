@@ -3,6 +3,7 @@ import {useState} from "react";
 import Link from 'next/link'
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
+import Season from '../components/season'
 
 export default function Home() {
 
@@ -46,6 +47,8 @@ export default function Home() {
         <button type='submit'>Submit login</button>
 
           <Link href='/register'>Register</Link>
+
+          <Season/>
       </form>
   )
 }

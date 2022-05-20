@@ -2,7 +2,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import React from "react";
 import Wrapper from "../components/Wrapper/Wrapper";
 
-function dashboard() {
+const Dashboard = () => {
   const { data: session } = useSession();
 
   return (
@@ -22,4 +22,4 @@ function dashboard() {
   );
 }
 
-export default dashboard;
+export default Dashboard;
