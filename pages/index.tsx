@@ -10,8 +10,11 @@ import Elite from '../components/Elite/Elite'
 import Comment from '../components/Elite/Comment'
 import Top from '../components/Top'
 import Blogs from '../components/Blogs'
+
 import {useSession, signIn, signOut} from 'next-auth/react';
 import { useRouter } from 'next/router'
+
+import Weare from '../components/Banner/Weare'
 
 const MainDisplay = () => {
   const router = useRouter()
@@ -30,6 +33,7 @@ const MainDisplay = () => {
           <Top/>
           {/* <Home/> */}
           <Banner/>
+
           <About/>
          <Box position="fixed" bottom='0' right='0' zIndex='300' >
          {/* <QuoteButton /> */}
