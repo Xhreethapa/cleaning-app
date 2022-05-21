@@ -21,7 +21,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <SessionProvider session={pageProps.session}>
       <ChakraProvider>
       <Sidebar
-          variant={variants?.navigation}
+          variant={"drawer"}
           isOpen={isSidebarOpen}
           onClose={toggleSidebar}/>
         <Component {...pageProps} />
