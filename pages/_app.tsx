@@ -23,7 +23,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
           isOpen={isSidebarOpen}
           onClose={toggleSidebar}
         />
-        <Box ml={!variants?.navigationButton ? 200 : 0}>
+        <Box >
           <Header
             showSidebarButton={variants?.navigationButton}
             onShowSidebar={toggleSidebar}

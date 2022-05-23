@@ -34,12 +34,18 @@ import {
 } from "react-icons/ri";
 
 interface Props {
-  onClose: React.MouseEventHandler<HTMLDivElement> 
+  onClose: () => void
   isOpen: boolean;
   variant: "drawer" | "sidebar";
 }
 
-const SidebarContent = ({ onClick }: { onClick: React.MouseEventHandler<HTMLDivElement> | undefined }) => (
+const SidebarContent = ({ onClick }: { onClick: (React.MouseEventHandler<HTMLDivElement> | undefined) }) => 
+
+{
+  const router = useRouter()
+
+  return (
+  
   <Flex direction="column" textAlign="left" ml={-5}>
     <Text textAlign="left" fontWeight="semibold" mb={2} ml={5}>
       Menu
@@ -64,7 +70,10 @@ const SidebarContent = ({ onClick }: { onClick: React.MouseEventHandler<HTMLDivE
             <Flex
               alignItems="center"
               gap={3}
-              onClick={onClick}
+              onClick={()=> {
+                onClick
+                router.push('/dashboard')
+              }}
               bg="none"
               fontWeight="semibold"
             >
@@ -132,7 +141,10 @@ const SidebarContent = ({ onClick }: { onClick: React.MouseEventHandler<HTMLDivE
               alignItems="center"
               gap={4}
               pl="4"
-              onClick={() => onClick}
+              onClick={()=> {
+                onClick
+                router.push('/invoice')
+              }}
               bg="none"
               fontWeight="semibold"
             >
@@ -199,7 +211,7 @@ const SidebarContent = ({ onClick }: { onClick: React.MouseEventHandler<HTMLDivE
       Logout
     </Flex>
   </Flex>
-);
+)};
 
 const Profile = () => {
   return (
@@ -233,17 +245,17 @@ const Sidebar = ({ isOpen, variant, onClose }: Props) => {
         h="100%"
         bg="#dfdfdf"
       >
-        <SidebarContent onClick={onClose} />
+        <SidebarContent onClick={()=>onClose} />
       </Box>
     ) : (
-      <Drawer isOpen={isOpen} placement="left" onClose={ ()=>onClose}>
+      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
         <DrawerOverlay>
           <DrawerContent p={-8}>
-            <DrawerCloseButton display={{ base: "none", md: "inline" }} />
+            <DrawerCloseButton  _focus={{outline:"none"}} />
             <DrawerHeader>Elite-ADMIN 1.0</DrawerHeader>
             <Profile />
             <DrawerBody>
-              <SidebarContent onClick={onClose} />
+              <SidebarContent onClick={()=>onClose} />
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
