@@ -12,6 +12,7 @@ import Top from '../components/Top'
 import Blogs from '../components/Blogs'
 import {useSession, signIn, signOut} from 'next-auth/react';
 import { useRouter } from 'next/router'
+import Home from '../components/Home'
 
 const MainDisplay = () => {
   const router = useRouter()
