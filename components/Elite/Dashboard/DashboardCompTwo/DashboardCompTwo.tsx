@@ -2,7 +2,7 @@ import { ArrowUpIcon } from '@chakra-ui/icons'
 import { Box, CircularProgress, CircularProgressLabel, Flex, Heading, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 
-export default function DashboardCompTwo({ key, header, subHeader, price, bg, color }) {
+export default function DashboardCompTwo({ key, header, subHeader, price, bg, color }: any) {
     return (
         <Flex p='2' rounded='2xl' my='2' align='center' shadow='inner' justify='space-between' flexDirection='row' w={{ base: '100% ', md: '40%' }} h='30%' bg={bg}>
             <Stack p='2' spacing='2'>
@@ -15,7 +15,8 @@ export default function DashboardCompTwo({ key, header, subHeader, price, bg, co
                 </Stack>
             </Stack>
             <Flex flexDirection='row' align='center' rounded='full' p='1' justify='center' >
-                <CircularProgress size={{ base: '60px', md: '80px' }} thickness='10' value={40} color='gray.800' trackColor='gray.50' p='2' rounded='full'>
+                {/* size={{ base: '60px', md: '80px' }} */}
+                <CircularProgress thickness='10' value={40} color='gray.800' trackColor='gray.50' p='2' rounded='full'>
                     <CircularProgressLabel>
                         <Text fontSize='16' fontWeight='bold' color='gray.800'>40%</Text>
                     </CircularProgressLabel>
