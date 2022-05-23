@@ -18,9 +18,7 @@ export default function Wrapper(props:any)
     else {
         return (
             <>
-                <h1>You are not authenticated</h1>
-
-                <Link href='/login'>Back to Login</Link>
+                {null}
             </>
         )
     }
