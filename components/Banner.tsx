@@ -15,7 +15,7 @@ const Banner = () => {
 
           <Flex backgroundColor="white"  w={{base:"100%"}} maxWidth="1000" px={4} position="fixed" zIndex="1000"  top="30"  justifyContent="space-between" alignItems="center" py={6} gap={10} >
               <Box color="blue.700" display={{md:"none"}}>
-              <GiHamburgerMenu fontSize={24}  cursor="pointer" />
+              {/* <GiHamburgerMenu fontSize={24}  cursor="pointer" /> */}
 
               </Box>
             <Logo/>
@@ -34,7 +34,7 @@ const Banner = () => {
             <Button  outline={{ border:"0px solid white"}} colorScheme="red" onClick={() => setQuote(!quote)} py={{base:'5px', sm:'5px', md:'5'}} fontSize={{base:'13px', sm:'15px',md:'17px'}}>Get a Quote</Button>
 
             <Flex position="fixed" bottom='15px' right='15px' width='50px' height='50px' borderRadius='50px' backgroundColor='#FFBF67' alignItems='center' display='flex' justifyContent='center'  zIndex='200'>
-          <FcCallback onClick={() => window.open("tel:+61426173439")}fontSize='24'/>
+          <FcCallback onClick={() => window.open("tel:+61484146979")}fontSize='24'/>
           </Flex>
            
 
