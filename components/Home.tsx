@@ -40,7 +40,7 @@ const Home = () => {
 
             </Box>
           <Box position="fixed" top='30px' right='30px' width='65px' height='65px' borderRadius='50px' backgroundColor='#FFBF67' alignItems='center' display='flex' justifyContent='center'  zIndex='200'>
-          <FcCallback onClick={() => window.open("tel:+61452603439")}fontSize='35'/>
+<!--           <FcCallback onClick={() => window.open("tel:+61452603439")}fontSize='35'/> -->
           </Box>
            
 
